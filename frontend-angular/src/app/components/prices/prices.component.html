@@ -1,0 +1,242 @@
+<div class="d-flex flex-column align-items-center overflow-y-auto w-75" id="pricesContainer">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="photographyType" [destroyOnHide]="false" class="w-90 nav-pills h3">
+        <li [ngbNavItem]="'individual'">
+            <button ngbNavLink>{{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.INDIVIDUAL' | translate }}</button>
+            <ng-template ngbNavContent>
+                <div class="">
+                    <div class="text-center">
+                        <h3 class="user-select-none">
+                            {{ 'PRICESCONTAINER.STANDARDPACKAGETITLE' | translate }}
+                        </h3>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.INDIVIDUAL.STANDARDPACKAGE.PART1' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.INDIVIDUAL.STANDARDPACKAGE.PART2' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.INDIVIDUAL.STANDARDPACKAGE.PART3' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.INDIVIDUAL.STANDARDPACKAGE.PART4' | translate }}
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="user-select-none">
+                            {{ 'PRICESCONTAINER.INDIVIDUAL.STANDARDPACKAGE.PRICE' | translate }}
+                        </h3>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="'children'">
+            <button ngbNavLink>{{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.CHILDREN' | translate }}</button>
+            <ng-template ngbNavContent>
+                <div class="">
+                    <div class="text-center">
+                        <h3 class="user-select-none">
+                            {{ 'PRICESCONTAINER.STANDARDPACKAGETITLE' | translate }}
+                        </h3>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.CHILDREN.STANDARDPACKAGE.PART1' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.CHILDREN.STANDARDPACKAGE.PART2' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.CHILDREN.STANDARDPACKAGE.PART3' | translate }}
+                        </p>
+                        <p class="fs-3 user-select-none">
+                            <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.CHILDREN.STANDARDPACKAGE.PART4' | translate }}
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="user-select-none">
+                            {{ 'PRICESCONTAINER.CHILDREN.STANDARDPACKAGE.PRICE' | translate }}
+                        </h3>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="'wedding'">
+            <button ngbNavLink>{{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.WEDDING' | translate }}</button>
+            <ng-template ngbNavContent>
+                <div class="multiplePackagesBlock">
+                    <div class="d-flex flex-column justify-content-start align-items-center">
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.STANDARDPACKAGETITLE' | translate }}
+                            </h3>
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PART1' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PART2' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PART3' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PART4' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PART5' | translate }}
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.WEDDING.STANDARDPACKAGE.PRICE' | translate }}
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="vr mx-5" [ngStyle]="{ 'width': '3px' }"></div>
+                    <div class="d-flex flex-column justify-content-start align-items-center">
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.MAXIMUMPACKAGETITLE' | translate }}
+                            </h3>
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PART1' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PART2' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PART3' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PART4' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PART5' | translate }}
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.WEDDING.MAXIMUMPACKAGE.PRICE' | translate }}
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="'family'">
+            <button ngbNavLink>{{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.FAMILY' | translate }}</button>
+            <ng-template ngbNavContent>
+                <div class="multiplePackagesBlock">
+                    <div class="d-flex flex-column justify-content-start align-items-center">
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.STANDARDPACKAGETITLE' | translate }}
+                            </h3>
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.STANDARDPACKAGE.PART1' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.STANDARDPACKAGE.PART2' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.STANDARDPACKAGE.PART3' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.STANDARDPACKAGE.PART4' | translate }}
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.FAMILY.STANDARDPACKAGE.PRICE' | translate }}
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="vr mx-5" [ngStyle]="{ 'width': '3px' }"></div>
+                    <div class="d-flex flex-column justify-content-start align-items-center">
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.MAXIMUMPACKAGETITLE' | translate }}
+                            </h3>
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.MAXIMUMPACKAGE.PART1' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.MAXIMUMPACKAGE.PART2' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.MAXIMUMPACKAGE.PART3' | translate }}
+                            </p>
+                            <p class="fs-3 user-select-none">
+                                <i class="bi bi-check2-square"></i> {{ 'PRICESCONTAINER.FAMILY.MAXIMUMPACKAGE.PART4' | translate }}
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="user-select-none">
+                                {{ 'PRICESCONTAINER.FAMILY.MAXIMUMPACKAGE.PRICE' | translate }}
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+<div class="text-center w-100 mt-3">
+    <button type="button" class="btn btn-outline-success btn-lg" id="orderButton" 
+        (click)="changeSendOrderFormAnimationState()"
+    >
+        {{ 'GALLERYPAGE.ORDERBUTTONTEXT' | translate }}
+    </button>
+</div>
+<div class="d-flex flex-column w-50 my-2 position-absolute visible overflow-y-auto pe-auto" [@send-order-form-animation]="sendOrderFormAnimationState"
+    (@send-order-form-animation.done)="sendOrderFormAnimationDone($event)"
+    #sendOrderFormContainer
+>
+    <button type="button" class="btn-close mb-1 align-self-end" aria-label="Close" (click)="changeSendOrderFormAnimationState()"></button>
+    <form [formGroup]="sendOrderForm" class="" novalidate (submit)="sendOrder()">
+        <div class="form-group form-floating mb-3">
+            <select class="form-control form-select" id="inputType" formControlName="orderType">
+                <option value="consultation" selected>{{ 'CLIENTORDERTYPES.CONSULTATION' | translate }}</option>
+                <option value="full">{{ 'CLIENTORDERTYPES.FULL' | translate }}</option>
+            </select>
+            <label for="inputType" class="form-label text-wrap">{{ 'SENDORDERFORM.ORDERTYPETEXT' | translate }}</label>
+            <div class="alert alert-danger" *ngIf="sendOrderForm.controls['orderType'].invalid && sendOrderForm.controls['orderType'].touched">
+                {{ 'SENDORDERFORM.ORDERTYPEINVALIDMESSAGE' | translate }}
+            </div>
+        </div>
+        <div class="form-group form-floating mb-3">
+            <input type="tel" class="form-control" id="inputPhoneNumber" formControlName="clientPhoneNumber"
+                placement="top"
+                tooltipClass="custom-tooltip"
+                [ngbTooltip]="'GALLERYPAGE.HELPBLOCKS.CLIENTPHONENUMBER' | translate"
+            >
+            <label for="inputPhoneNumber" class="form-label text-wrap">{{ 'SENDORDERFORM.CLIENTPHONENUMBERTEXT' | translate }}</label>
+            <div class="alert alert-danger" *ngIf="sendOrderForm.controls['clientPhoneNumber'].invalid && sendOrderForm.controls['clientPhoneNumber'].touched">
+                {{ 'SENDORDERFORM.CLIENTPHONENUMBERINVALIDMESSAGE' | translate }}
+            </div>
+        </div>
+        <div class="form-group form-floating mb-3">
+            <textarea class="form-control" id="inputComment" rows="8" maxlength="800" formControlName="comment"
+                placement="top"
+                tooltipClass="custom-tooltip"
+                [ngbTooltip]="'GALLERYPAGE.HELPBLOCKS.COMMENT' | translate"
+            ></textarea>
+            <label for="inputComment" class="form-label text-wrap">{{ 'SENDORDERFORM.COMMENTTEXT' | translate }}</label>
+        </div>
+        <div class="form-group text-center">
+            <button class="btn btn-primary" [disabled]="sendOrderForm.invalid">
+                {{ 'SENDORDERFORM.SUBMITBUTTONTEXT' | translate }}
+            </button>
+        </div>
+    </form>
+</div>

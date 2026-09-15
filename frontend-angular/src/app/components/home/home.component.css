@@ -1,0 +1,186 @@
+:host ::ng-deep #discountsCarousel .carousel-inner,
+:host ::ng-deep #discountsCarousel .carousel-inner .carousel-item {
+    height: 100% !important;
+}
+
+.imagePhotographyTypesGroup > div > div > small, .imagePhotographyTypesGroup > div > div > span {
+    height: 10% !important;
+}
+
+:host ::ng-deep #discountsCarousel {
+    background-image: url('/assets/images_full/1698852851520265.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 650px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    .imagePhotographyTypesGroup {
+        flex-direction: column !important;
+    }
+
+    .imagePhotographyTypesGroup > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+    }
+
+    .imagePhotographyTypesGroup > div:nth-child(1):not(:last-child) {
+        margin-bottom: 1rem !important;
+    }
+
+    #aboutContainer > img {
+        max-width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 576px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    :host ::ng-deep #discountsCarousel {
+        min-height: 120px;
+    }
+}
+
+@media screen and (max-width: 1150px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    #aboutContainer {
+        flex-direction: column !important;
+    }
+
+    #aboutContainer > img {
+        height: auto !important;
+        max-width: 80% !important;
+    }
+
+    #aboutContainer > div {
+        overflow-y: hidden !important;
+        margin-left: 0 !important;
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    :host ::ng-deep #discountsCarousel {
+        min-height: 200px;
+    }
+}
+
+@media screen and (min-width: 735px) {
+    :host ::ng-deep #discountsCarousel {
+        min-height: 200px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    :host ::ng-deep #discountsCarousel {
+        min-height: 280px;
+    }
+}
+
+@media screen and (max-width: 1513px) {
+    #aboutContainer > div {
+        overflow-y: scroll !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    :host ::ng-deep #discountsCarousel {
+        min-height: 280px;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    #aboutContainer > div {
+        justify-content: start !important;
+    }
+}

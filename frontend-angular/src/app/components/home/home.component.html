@@ -1,0 +1,88 @@
+<div class="vw-100 z-1 imagesCarouselContainer section">
+    <ngb-carousel *ngIf="compressedImagesList" class="carousel carousel-fade h-100 w-100 imagesCarousel"
+        [interval]="3000"
+        [showNavigationArrows]="compressedImagesList.length !== 1"
+        [showNavigationIndicators]="compressedImagesList.length !== 1"
+    >
+        <ng-template ngbSlide *ngFor="let imageData of compressedImagesList; let i = index">
+            <img src="/assets/images_thumbnail/home/{{ imageData.name }}" class="h-100 w-100 object-fit-cover align-baseline" alt="">
+        </ng-template>
+    </ngb-carousel>
+</div>
+<ng-template>
+    <div *ngIf="discountsData" class="w-100 my-3 section">
+        <ngb-carousel class="carousel w-100" id="discountsCarousel" 
+            [interval]="0"
+            [showNavigationArrows]="discountsData.length !== 1"
+            [showNavigationIndicators]="discountsData.length !== 1"
+        >
+            <ng-template ngbSlide *ngFor="let discountData of discountsData; let i = index">
+                <div class="h-100 w-100 text-center text-light">
+                    <p class="row justify-content-center align-items-center h-100 h1">
+                        {{ discountData.content }}
+                    </p>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</ng-template>
+<div class="px-4 w-100 font-family-pacifico-regular" id="portfolio_header">
+    <h1 class="display-4 p-3 text-center user-select-none">{{ 'HOMEPAGE.HEADERTITLE' | translate }}</h1>
+</div>
+<ng-template [ngIf]="imagePhotographyTypes && imagePhotographyTypes.length !== 0" >
+    <ng-template ngFor let-imagePhotographyTypesDataArr [ngForOf]="imagePhotographyTypes" let-i="index">
+        <div class="d-flex flex-row justify-content-center align-items-center px-5 pb-4 w-100 h-100 imagePhotographyTypesGroup" #imagePhotographyTypesGroup style="padding-bottom: 8rem !important;"
+            [attr.image-photography-container-index-number]="i"
+            [ngClass]="{ 
+                'pt-4': i === 0
+            }"
+            [style.backgroundColor]="'#f2f2f2'"
+        >
+            <div *ngFor="let imagePhotographyTypeData of imagePhotographyTypesDataArr; let j = index"
+                class="rounded h-100 imagePhotographyContainer"
+                [ngClass]="{
+                    'w-50': imagePhotographyTypesDataArr.length !== 1,
+                    'w-100': imagePhotographyTypesDataArr.length === 1,
+                    'me-4': j === 0 && imagePhotographyTypesDataArr.length !== 1
+                }"
+                (mouseenter)="startMouseTriggerAnimation(setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name))"
+                (mouseleave)="startMouseTriggerAnimation(setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name))"
+                (click)="startMouseTriggerAnimationClick(setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name))"
+                [attr.mouse-trigger-state-index]="setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name)"
+                [@scroll-visiable-animation]="currentScrollSnapSectionVisiableAnimationStates[i].state"
+                (@scroll-visiable-animation.start)="scrollVisiableAnimationStarted($event)"
+                (@scroll-visiable-animation.done)="scrollVisiableAnimationDone($event)"
+            >
+                <a class="btn d-flex flex-column text-center font-family-sue-ellen-francisco-regular photograpyTypeLinkContainer" [routerLink]="[ '/gallery', imagePhotographyTypeData.name ]" role="button"
+                    [ngClass]="{ 'justify-content-end': imagePhotographyTypesDataArr.length === 1 }"
+                    (@mouseTrigger.start)="mouseTriggerAnimationStarted($event)"
+                    [@mouseTrigger]="currentMouseTriggerStates[setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name)]"
+                    [ngSwitch]="imagePhotographyTypeData.name"
+                >
+                    <img src="/assets/images_thumbnail/home/imagePhotographyTypes/{{ imagePhotographyTypeData.compressedImageName }}" 
+                        class="h-80 rounded" alt=""
+                    >
+                    <span class="align-self-end mt-2 fs-5">
+                        <ng-template ngSwitchCase="individual"> {{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.INDIVIDUAL' | translate }}</ng-template>
+                        <ng-template ngSwitchCase="children"> {{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.CHILDREN' | translate }}</ng-template>
+                        <ng-template ngSwitchCase="wedding"> {{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.WEDDING' | translate }}</ng-template>
+                        <ng-template ngSwitchCase="family"> {{ 'IMAGEPHOTOGRAPHYTYPESFULLTEXT.FAMILY' | translate }}</ng-template>
+                    </span>
+                    <small class="align-self-end text-body-secondary">
+                        {{ 'HOMEPAGE.PHOTOGRAPHYTYPESLINKTEXT' | translate }} <i class="bi bi-arrow-right"></i>
+                    </small>
+                </a>
+                <a class="btn position-absolute top-50 start-50 w-50 linkButtonContainer" [routerLink]="[ '/gallery', imagePhotographyTypeData.name ]" role="button"
+                    [@link-button-container-animation]="currentLinkButtonContainerAnimationStates[setCurrentMouseTriggerStateIndex(imagePhotographyTypeData.name)]"
+                >
+                    <!-- <a [routerLink]="[ '/gallery', imagePhotographyTypeData.name ]" routerLinkActive="active" 
+                        class="btn btn-outline-light align-items-center justify-content-center icon-link icon-link-hover w-100 fs-4" 
+                        tabindex="-1" role="button" aria-disabled="true"
+                    >
+                        <i class="bi bi-forward"></i>
+                    </a> -->
+                </a>
+            </div>
+        </div>
+    </ng-template>
+</ng-template>

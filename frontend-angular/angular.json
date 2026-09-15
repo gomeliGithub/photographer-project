@@ -1,0 +1,142 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "frontend-angular": {
+            "projectType": "application",
+            "schematics": {},
+            "root": "",
+            "sourceRoot": "src",
+            "prefix": "app",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:application",
+                    "options": {
+                        "outputPath": "dist/frontend-angular",
+                        "index": "src/index.html",
+                        "browser": "src/main.ts",
+                        "polyfills": [
+                            "zone.js"
+                        ],
+                        "tsConfig": "tsconfig.app.json",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            "src/robots.txt",
+                            "src/sitemap.xml"
+                        ],
+                        "styles": [
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+                            "src/styles.css"
+                        ],
+                        "scripts": [
+                            "node_modules/hammerjs/hammer.min.js"
+                        ],
+                        "server": "src/main.server.ts",
+                        "prerender": false,
+                        "ssr": {
+                            "entry": "server.ts"
+                        },
+                        "clearScreen": true,
+                        "deleteOutputPath": true
+                    },
+                    "configurations": {
+                        "production": {
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "3mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb",
+                                    "maximumError": "8kb"
+                                }
+                            ],
+                            "outputHashing": "all",
+                            "optimization": {
+                                "scripts": true,
+                                "styles": {
+                                    "minify": true,
+                                    "inlineCritical": false
+                                },
+                                "fonts": true
+                            },
+                            "allowedCommonJsDependencies": [
+                                "@photographer-project/types"
+                            ],
+                            "sourceMap": true,
+                            "namedChunks": false,
+                            "extractLicenses": true
+                        },
+                        "development": {
+                            "optimization": false,
+                            "extractLicenses": false,
+                            "sourceMap": false,
+                            "namedChunks": true,
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.development.ts"
+                                }
+                            ]
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "configurations": {
+                        "production": {
+                            "buildTarget": "frontend-angular:build:production"
+                        },
+                        "development": {
+                            "buildTarget": "frontend-angular:build:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "buildTarget": "frontend-angular:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "polyfills": [
+                            "zone.js",
+                            "zone.js/testing"
+                        ],
+                        "tsConfig": "tsconfig.spec.json",
+                        "assets": [
+                            "src/favicon.ico",
+                            "src/assets",
+                            "src/robots.txt",
+                            "src/sitemap.xml"
+                        ],
+                        "styles": [
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+                            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+                            "src/styles.css"
+                        ],
+                        "scripts": [
+                            "node_modules/hammerjs/hammer.min.js"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "cli": {
+      "analytics": false
+    }
+}

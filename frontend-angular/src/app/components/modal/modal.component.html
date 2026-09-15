@@ -1,0 +1,47 @@
+<div class="modal-header">
+    <h1 class="modal-title fs-5 p-2 rounded-pill shadow user-select-none" id="modalLabel"
+        [ngClass]="{
+            'text-success': type === 'successModal',
+            'text-warning': type === 'warningModal',
+            'text-danger': type === 'errorModal'
+        }"
+        [ngSwitch]="type"
+    >
+        <ng-template [ngSwitchCase]="'successModal'">
+            <i class="bi bi-info-circle-fill"></i>
+        </ng-template>
+        <ng-template [ngSwitchCase]="'warningModal'">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+        </ng-template>
+        <ng-template [ngSwitchCase]="'errorModal'">
+            <i class="bi bi-exclamation-circle-fill"></i>
+        </ng-template>
+        {{ title }}
+    </h1>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss()"></button>
+</div>
+<div [ngSwitch]="type" class="modal-body">
+    <div *ngSwitchCase="'successModal'">
+        <p class="text-success">
+            {{ body }}
+        </p>
+    </div>
+    <div *ngSwitchCase="'warningModal'">
+        <p class="text-warning">
+            {{ body }}
+        </p>
+    </div>
+    <div *ngSwitchCase="'errorModal'">
+        <p class="text-danger">
+            {{ body }}
+        </p>
+    </div>
+</div>
+<div class="modal-footer">
+    <button *ngIf="closeButton" type="button" class="btn btn-secondary" (click)="activeModal.dismiss()">
+        {{ closeButtonCaption }}
+    </button>
+    <button *ngIf="confirmButton" type="button" class="btn btn-primary" (click)="activeModal.dismiss()">
+        {{ confirmButtonCaption }}
+    </button>
+</div>

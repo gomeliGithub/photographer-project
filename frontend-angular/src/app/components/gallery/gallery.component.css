@@ -1,0 +1,93 @@
+@media screen and (max-width: 768px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    #titleHeaderContainer {
+        padding: 0.5rem !important;
+    }
+
+    #titleHeader {
+        font-size: 1.25rem !important;
+    }
+}
+
+:host ::ng-deep #galleryImagesCarousel .owl-nav {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% !important;
+}
+
+:host ::ng-deep #galleryImagesCarousel .owl-nav .owl-prev {
+    float: left !important;
+}
+
+:host ::ng-deep #galleryImagesCarousel .owl-nav .owl-next {
+    float: right !important;
+}
+
+:host ::ng-deep #galleryImagesCarousel .owl-theme .owl-nav [class*=owl-] {
+    background: none !important;
+    font-size: inherit !important;
+    border-radius: 0 !important;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+:host ::ng-deep #galleryImagesCarousel .owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
+    opacity: 1 !important;
+}
+
+
+:host ::ng-deep .owl-theme .owl-nav [class*=owl-] > i {
+    font-size: calc(1.325rem + .9vw) !important;
+}
+
+@media (min-width: 1200px) {
+    :host ::ng-deep .owl-theme .owl-nav [class*=owl-] > i {
+        font-size: 2rem !important;
+    }
+}
+
+.downloadOriginalImageLinkContainer {
+    width: 100%;
+    transform: translate(-50%, -100%) !important;
+}
+
+:host ::ng-deep .carousel-img {
+    max-width: 450px;
+    width: 100% !important;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}

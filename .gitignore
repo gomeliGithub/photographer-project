@@ -1,0 +1,62 @@
+# IDE - Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.settings/
+
+# Continue
+.continue/
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# ----- Nest.js -----
+
+
+# Server files
+backend-nest/files/
+backend-nest/databaseDumps/
+
+# Node
+backend-nest/node_modules/
+
+# Compiled output
+backend-nest/dist/
+
+# dotenv environment variable files and credentials
+backend-nest/config/
+backend-nest/prisma/.env
+
+# Logs
+backend-nest/logs
+
+# Prisma
+backend-nest/prisma/migrations/
+
+
+# ----- Angular -----
+
+
+# Node
+frontend-angular/node_modules/
+
+# Compiled output
+frontend-angular/dist/
+frontend-angular/browser/
+frontend-angular/src/*.tsbuildinfo
+
+# Miscellaneous
+frontend-angular/.angular/cache/
+
+
+# ----- Types -----
+
+
+# Node
+types/node_modules/
+
+# Compiled output
+types/dist/
+types/*.tsbuildinfo

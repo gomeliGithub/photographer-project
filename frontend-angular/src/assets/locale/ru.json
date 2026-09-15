@@ -1,0 +1,324 @@
+{
+	"DEFAULTSUCCESSMESSAGE": "Операция успешно завершена",
+	"DEFAULTERRORMESSAGE": "Что-то пошло не так. Попробуйте ещё раз",
+	"PAGETITLES": {
+		"HOME": "Главная",
+		"GALLERY": "Портфолио",
+		"PRICES": "Прейскурант",
+		"ABOUT": "Обо мне",
+		"ADMINPANEL": {
+			"MAIN": "Панель администратора",
+			"IMAGESCONTROL": "Управление фото",
+			"ORDERSCONTROL": "Управление заказами",
+			"DISCOUNTSCONTROL": "Управление скидками"
+		},
+		"SIGNUP": "Регистрация",
+		"SIGNIN": "Вход",
+		"NOTFOUND": "Ресурс не найден"
+	},
+	"SCROLLSNAPITEMSTEXT": {
+		"DISCOUNTS": "Скидки",
+		"PORTFOLIOOVERVIEW": "Портфолио"
+	},
+	"NOIMAGESMESSAGE": "Изображений пока нет",
+	"CHANGECLIENTLOCALESUCCESSMESSAGE": "Язык успешно изменен",
+	"HOMEPAGE": {
+		"HEADERTITLE": "Портфолио",
+		"PHOTOGRAPHYTYPESLINKTEXT": "Смотреть работы",
+		"ABOUTTEXT": {
+			"PART1": "Здравствуйте, меня зовут Мария Бурцева и я профессиональный фотограф. Я живу и снимаю в Гомеле. А так же по всей Беларуси и Миру.",
+			"PART2": "Я снимаю уже более пяти лет. Чаще свадьбы и частные портреты, у меня большой опыт в том, что бы сделать ваши воспоминания красивыми и незабываемыми.",
+			"PART3": "Основное правило, которого я придерживаюсь в своей работе, это то, что в финале должны получиться яркие снимки, которые будут радовать вас и напоминать о вашем событии. Если описать мои снимки, то с одной стороны я могу делать красивую яркую сказку, погружая героев моих снимков в мир яркой картинки и светлых воспоминаний. С другой стороны я ловлю момент и передаю настроение события делая репортаж о нем эмоциональным и живым, так говорят мои клиенты, именно это им нравится.",
+			"PART4": "Вы хотите сохранить ваши эмоции? Или вы хотите звенящие стильные фотографии как в глянцевом журнале? Вы хотите чтобы ваши фотографии были теплыми, яркими, сочными, живыми и эмоциональными. Значит мы с вами думаем одинаково, значит нам с вами попути."
+		}
+	},
+	"GALLERYPAGE": {
+		"HEADERTITLE": "Бурцева Мария",
+		"ORDERBUTTONTEXT": "Заказать фотосессию",
+		"DOWNLOADORIGINALIMAGEBUTTONTEXT": "Скачать оригинал",
+		"HELPBLOCKS": {
+			"CLIENTPHONENUMBER": "Ваш номер телефона в международном формате.",
+			"COMMENT": "Ваш комментарий или пожелание к заказу."
+		},
+		"CLIENTORDERSUCCESSMESSAGE": "Заказ успешно отправлен. Я с вами свяжусь в ближайшее время"
+	},
+	"PRICESCONTAINER": {
+		"STANDARDPACKAGETITLE": "ПАКЕТ STANDART",
+		"MAXIMUMPACKAGETITLE": "ПАКЕТ MAXIMUM",
+		"INDIVIDUAL": {
+			"STANDARDPACKAGE": {
+				"PART1": "Длительность съемки 1 час",
+				"PART2": "30+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Срок выполнения 10-14 дней",
+				"PRICE": "70 BYN"
+			}
+		}, 
+		"CHILDREN": {
+			"STANDARDPACKAGE": {
+				"PART1": "Длительность съемки 1 часа",
+				"PART2": "30+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Срок выполнения 10-14 дней",
+				"PRICE": "50 BYN"
+			}
+		}, 
+		"WEDDING": {
+			"STANDARDPACKAGE": {
+				"PART1": "Длительность съемки 3 часа",
+				"PART2": "100+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Аренда фотостудии ВКЛЮЧЕНА в стоимость",
+				"PART5": "Срок выполнения 10-14 дней",
+				"PRICE": "450 BYN"
+			},
+			"MAXIMUMPACKAGE": {
+				"PART1": "Длительность съемки от 3 до 8 часов",
+				"PART2": "300+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Аренда фотостудии ВКЛЮЧЕНА в стоимость",
+				"PART5": "Срок выполнения 10-14 дней",
+				"PRICE": "1000 BYN"
+			}
+		}, 
+		"FAMILY": {
+			"STANDARDPACKAGE": {
+				"PART1": "Длительность съемки 1 час",
+				"PART2": "30+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Срок выполнения 10-14 дней",
+				"PRICE": "100 BYN"
+			},
+			"MAXIMUMPACKAGE": {
+				"PART1": "Длительность съемки 3 часа",
+				"PART2": "60+ фото",
+				"PART3": "Цветокоррекция, лёгкая ретушь",
+				"PART4": "Срок выполнения 10-14 дней",
+				"PRICE": "300 BYN"
+			}
+		}
+	},
+	"CLIENTPAGE": {
+		"PASSWORDSHOWSWITCHTEXT": "Показать пароль",
+		"PASSWORDHIDESWITCHTEXT": "Скрыть пароль",
+		"LOGININVALIDMESSAGE": "Некорректный логин",
+		"PASSWORDINVALIDMESSAGE": "Некорректный пароль",
+		"FULLNAMEINVALIDMESSAGE": "Некорректное полное имя",
+		"EMAILINVALIDMESSAGE": "Некорректный email",
+		"HELPBLOCKS": {
+			"LOGIN": "Ваш логин должен быть длинной от 4 до 15 символов и содержать только символы латинского алфавита и (или) цифры.",
+			"PASSWORD": "Ваш пароль должен быть длинной от 5 до 20 символов.",
+			"FULLNAME": "Ваш полное имя должно быть длинной от 3 до 25 символов.",
+			"EMAIL": "(Необязательно) Адрес вашей электронной почты."
+		},
+		"ACCOUNTHAVEMESSAGES": {
+			"HAVE": "Уже есть аккаунт?",
+			"HAVENT": "Ещё нет аккаунта?"
+		},
+		"SIGNERRORTEXT": "Неверный логин или пароль"
+	},
+	"NOTFOUNDPAGE": {
+		"MAINTEXT": "Ресурс, который вы пытаетесь открыть, не существует.",
+		"SECONDARYTEXT": "Запрашиваемый ресурс не найден.",
+		"GOHOMETEXT": "На главную"
+	},
+  	"CLIENTMENU": {
+		"TITLE": "Аккаунт",
+		"SIGNUPTEXT": "Создать",
+    	"SIGNINTEXT": "Войти",
+    	"SIGNOUTTEXT": "Выйти",
+		"NONSIGNINTEXT": "Гость"
+	},
+	"LOGINFORM": {
+		"TITLE": "Вход в систему",
+		"LOGINLABELTEXT": "Логин *",
+		"PASSWORDLABELTEXT": "Пароль *",
+		"FULLNAMELABELTEXT": "Полное имя *",
+		"NOLOGINTEXT": "Не указан логин",
+		"NOPASSWORDTEXT": "Не указан пароль",
+		"CONFIRMBUTTONCAPTIONTEXT": "Войти"
+	},
+	"SENDORDERFORM": {
+		"ORDERTYPETEXT": "Тип заказа *",
+		"CLIENTPHONENUMBERTEXT": "Номер телефона *",
+		"COMMENTTEXT": "Комментарий или пожелание",
+		"ORDERTYPEINVALIDMESSAGE": "Некорректный тип заказа",
+		"CLIENTPHONENUMBERINVALIDMESSAGE": "Некорректный номер телефона",
+		"SUBMITBUTTONTEXT": "Отправить заказ"
+	},
+	"MODAL": {
+		"SUCCESSTITLE": "Успешно",
+		"WARNINGTITLE": "Внимание",
+		"ERRORTITLE": "Ошибка",
+		"BUTTONS": {
+			"CONFIRMCAPTIONTEXT": "Закрыть"
+		}
+	},
+	"UPLOADIMAGERESPONSES": {
+		"WRONGDISPLAYTYPE": "Не подходящяя ориентация изображения",
+		"PREVIOUSUPLOADIMAGEOPERATIONISACTIVE": "Предыдущий процесс загрузки нового изображения не завершен",
+		"NOTSUPPORTEDFORMAT": "Не поддерживаемый формат изображения",
+		"PENDING": "Сервер занят. Повторите попытку позже",
+		"FILEEXISTS": "Изображение с таким именем уже загружено",
+		"MAXCOUNT": "Загружено максимальное количество изображений",
+		"MAXSIZE": "Максимальный размер изображения - 100 МБ",
+		"MAXNAMELENGTH": "Имя изображения должно содержать как минимум 4 символа",
+		"FINISH": "Изображение успешно загружено"
+	},
+	"UPLOADIMAGE_CANSELBUTTONTEXT": "Отменить",
+	"UPLOADIMAGE_CANSELMESSAGE": "Загрузка изображения отменена",
+	"UPLOADIMAGE_PENDINGMESSAGE": "Максимальное количество активных загрузок. Попробуйте немного позже",
+	"ADMINPANEL": {
+		"BOOLEANTRUETEXT": "Да",
+		"BOOLEANFALSETEXT": "Нет",
+		"IMAGETHUMBNAILCONTAINERCAPTION": "Предпросмотр",
+		"NOIMAGESMESSAGE": "Загруженных изображений пока нет",
+		"NOCLIENTORDERSMESSAGE": "Новых заказов пока нет",
+		"NOCLIENTORDERSMESSAGES": {
+			"NEWORDERS": "Новых заказов пока нет",
+			"PROCESSEDORDERS": "Обработанных заказов пока нет"
+		},
+		"NOCLIENTWITHNEWORDERSMESSAGES": {
+			"NEWORDERS": "Клиентов с новыми заказами пока нет",
+			"PROCESSEDORDERS": "Клиентов с обработанными заказами пока нет"
+		},
+		"NODISCOUNTSMESSAGE": "Скидок пока нет",
+		"DELETEIMAGESUCCESSMESSAGE": "Изображение успешно удалено",
+		"MAXCOUNTONHOMEPAGEMESSAGE": "Отображено максимальное количество изображений",
+		"TABLECAPTION": "Управление изображениями",
+		"SECONDTABLECAPTION": "Управление данными для типов съёмок",
+		"CHANGEPHOTOGRAPHYTYPEDESCRIPTIONBUTTON": "Изменить описание",
+		"CHANGEPHOTOGRAPHYTYPEDESCRIPTIONBUTTONINVALIDMESSSAGE": "Максимум 40 символов.",
+		"CHANGEDISCOUNTACCORDIONBUTTONTEXT": "Данные скидки №",
+		"CHANGEDISCOUNTEXPIRATIONDATECHANGEBUTTONTEXT": "Изменить",
+		"CHANGEDISCOUNTEXPIRATIONDATEDELETEBUTTON": "Удалить скидку",
+		"CHANGEDISCOUNTMAXCOUNTMESSAGE": "Максимальное количество скидок 3",
+		"SEARCHIMAGESFORM": {
+			"INPUTSDATETEXT": "Дата загрузки",
+			"INPUTDATEFROMLABELTEXT": "От",
+			"INPUTDATEUNTILLABELTEXT": "До",
+			"INPUTPHOTOGRAPHYTYPETEXT": "Типы съёмок",
+			"INPUTDISPLAYTYPETEXT": "Типы отображения",
+			"INPUTSORTBYLABELTEXT": "Сортировка по",
+			"SORTBYTEXT": {
+				"ORIGINALNAME": "Оригинальному имени",
+				"ORIGINALSIZE": "Размеру оригинального изображения",
+				"PHOTOGRAPHYTYPE": "Типу съёмки",
+				"DISPLAYTYPE": "Типу отображения",
+				"UPLOADDATE": "Дате загрузки",
+				"DISPLAYEDONHOMEPAGE": "Видимости на главной странице",
+				"DISPLAYEDONGALLERYPAGE": "Видимости на странице галереи"
+			},
+			"ACCORDIONTITLETEXT": "Поиск изображений",
+			"SUBMITBUTTONTEXT": "Найти",
+			"RESETBUTTONTEXT": "Очистить критерии поиска"
+		},
+		"TABLECOLTITLES": {
+			"ORIGINALNAME": "Оригинальное имя",
+			"ORIGINALSIZE": "Размер оригинального изображения",
+			"IMAGEPHOTOGRAPHYTYPE": "Тип съёмки",
+			"DISPLAYTYPE": "Тип отображения",
+			"UPLOADAT": "Загружен",
+			"ONHOMEPAGE": "Отображён на главной",
+			"ONGALLERYPAGE": "Отображён на галерее",
+			"IMAGEPHOTOGRAPHYTYPEDESCRIPTION": "Описание"
+		},
+		"CLIENTORDERSTABLECOLTITLES": {
+			"IMAGEPHOTOGRAPHYTYPE": "Тип съёмки",
+			"TYPE": "Тип заказа",
+			"CLIENTPHONENUMBER": "Номер телефона клиента",
+			"CLIENTCOMMENT": "Дополнительная информация от клиента",
+			"CREATEDDATE": "Дата создания"
+		},
+		"ADDITIONALCOMPRESSEDIMAGESBUTTONTEXT": "Ещё фото",
+		"CLIENTORDERSTABLECHANGESTATUSBUTTONTEXT": "Отметить как обработанный",
+		"GUESTLOGINTEXT": "Гость",
+		"ADDITIONALCLIENTORDERSBUTTONTEXT": "Ещё заказы",
+		"ADDITIONALCLIENTORDERSINFODATABUTTONTEXT": "Ещё клиенты",
+		"CLIENTORDERSTABPANESTEXT": {
+			"NEW": "Новые заказы",
+			"PROCESSED": "Обработанные заказы"
+		},
+		"SELECTEDCLIENTTEXT": "Выбранный клиент: ",
+		"IMAGECONTROLTEXT": {
+			"TITLE": "Управление",
+			"DELETEBUTTON": "Удалить",
+			"MOVETOHOMEPAGEBUTTON": "На главную",
+			"MOVETOGALLERYPAGEBUTTON": "В галерею",
+			"MOVETOARCHIVEBUTTON": "В архив",
+			"SETPHOTOGRAPHYTYPEIMAGE": {
+				"INDIVIDUALBUTTONTEXT": "Установить в качестве изображения-ссылки на галерею индивидуальной съёмки", 
+				"CHILDRENBUTTONTEXT": "Установить в качестве изображения-ссылки на галерею детской съёмки", 
+				"WEDDINGBUTTONTEXT": "Установить в качестве изображения-ссылки на галерею свадебной съёмки",
+				"FAMILYBUTTONTEXT": "Установить в качестве изображения-ссылки на галерею семейной съёмки"
+			}
+		},
+		"CHANGEIMAGEDATATEXT": {
+			"SHOWDATABUTTONTOOLTIP": "Скрыть / Показать данные",
+			"PLACEHOLDERTEXT": "Текст отсутствует",
+			"CHANGEBUTTON": "Подтвердить изменения"
+		},
+		"UPLOADIMAGETEXT": {
+			"PHOTOGRAPHYTYPE": "Тип съёмки *",
+			"DISPLAYTYPE": "Тип отображения *",
+			"INVALIDPHOTOGRAPHYTYPE": "Не выбран тип съёмки",
+			"INVALIDDISPLAYTYPE": "Не выбран тип отображения",
+			"INVALIDSELECTIMAGE": "Не выбрано изображение",
+			"DESCRIPTION": "Индивидуальное описание фото",
+			"BUTTON": "Загрузить новое изображение"
+		},
+		"CREATEDISCOUNTTEXT": {
+			"CONTENT": "Содержание *",
+			"EXPIRATIONDATE": "Период действия *",
+			"INVALIDCONTENT": "Не указано содержание, либо количество символов больше 50",
+			"INVALIDEXPIRATIONDATE": "Не выбран период действия",
+			"BUTTON": "Создать скидку"
+		},
+		"IMAGESIZES": {
+			"BYTE": "байт",
+			"KBYTE": "КБ",
+			"MBYTE": "МБ",
+			"GBYTE": "ГБ",
+			"TBYTE": "ТБ"
+		},
+		"PREVIOUSACTIVEIMAGEOPERATIONSMESSAGES": {
+			"CHANGEDATA": "Предыдущая операция изменения данных изображения не завершена",
+			"DELETE": "Предыдущая операция удаления изображения не завершена",
+			"CHANGEDISPLAYTARGET": "Предыдущая операция изменения места отображения изображения не завершена",
+			"SETPHOTOGRAPHYTYPE": "Предыдущая операция установки изображения для типа съемки не завершена",
+			"GETFULLCOMPRESSEDLIST": "Предыдущая операция загрузки списка изображений не завершена",
+			"GETTHUMBNAIL": "Предыдущая операция загрузки уменьшенной копия изображения не завершена",
+			"CHANGEPHOTOGRAPHYTYPEDESCRIPTION": "Предыдущая операция изменения описания типа съемки не завершена"
+		}
+	},
+	"IMAGEPHOTOGRAPHYTYPES": {
+		"INDIVIDUAL": "Индивидуальная", 
+		"CHILDREN": "Детская", 
+		"WEDDING": "Свадьба", 
+		"FAMILY": "Семейная"
+	},
+	"IMAGEPHOTOGRAPHYTYPESFULLTEXT": {
+		"INDIVIDUAL": "Индивидуальная съёмка", 
+		"CHILDREN": "Детская съёмка", 
+		"WEDDING": "Свадебная съёмка", 
+		"FAMILY": "Семейная съёмка"
+	},
+	"IMAGEDISPLAYTYPES": {
+		"HORIZONTAL": "Горизонтальный",
+		"VERTICAL": "Вертикальный"
+	},
+	"CLIENTORDERTYPES": {
+		"CONSULTATION": "Консультация",
+		"FULL": "Полный"
+	},
+	"CLIENTORDERSTATUSES": {
+		"NEW": "Новый",
+		"PROCESSED": "Обработан"
+	},
+	"PROGRESSBAR": {
+		"TITLE": "Загрузка изображения..."
+	},
+	"SPINNERTITLES": {
+		"PROCESSING": "Обработка..."
+	}
+}

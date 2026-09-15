@@ -1,0 +1,32 @@
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #888;
+}
+
+:host ::ng-deep #navbarNavDropdown ul {
+    width: fit-content;
+}
+
+.nav-item.dropdown .nav-link:focus-visible  {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    #navbarNavDropdown, #navbarNavDropdown ul {
+        font-size: calc(1.3rem + .6vw) !important;
+    }
+
+    #navbarNavDropdown > ul:first-child {
+        padding-top: .5rem !important;
+    }
+}

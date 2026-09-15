@@ -1,0 +1,164 @@
+@media screen and (max-width: 497px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    #searchImagesForm button:first-child {
+        margin-right: 0 !important;
+        margin-bottom: .25rem !important;
+    }
+}
+
+@media screen and (max-width: 768px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    :host ::ng-deep #uploadImageAccordion, :host ::ng-deep #changeImageDataContainer {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .compressedImageData {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #compressedImagesDataContainer img {
+        max-height: 670px; /* max-height: 350px; */
+    }
+}
+
+@media (min-width: 992px) { 
+    #compressedImagesDataContainer img {
+        max-height: 455px; /* max-height: 450px; */
+    }
+}
+
+@media (min-width: 1200px) { 
+    #compressedImagesDataContainer img {
+        max-height: 559px; /* max-height: 550px; */
+    }
+
+    .compressedImageData {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (min-width: 1400px) { 
+    #compressedImagesDataContainer img {
+        max-height: 434px; /* max-height: 670px; */
+    }
+}
+
+@media (min-width: 1800px) { 
+    #compressedImagesDataContainer img {
+        max-height: 569px; /* max-height: 850px; */
+    }
+}
+
+@media (min-width: 2100px) { 
+    #compressedImagesDataContainer img {
+        max-height: 500px; /* max-height: 950px; */
+    }
+}
+
+:host ::ng-deep .imagePhotographyTypeDescriptionAccordion .accordion-button {
+    padding: 0.2rem 1rem;
+}
+
+:host ::ng-deep #uploadImageAccordion .accordion-body {
+    padding: 1.2rem !important;
+}
+
+#imageControlButtonList > li:first-child {
+    border-top-left-radius: var(--bs-border-radius) !important;
+    border-top-right-radius: var(--bs-border-radius) !important;
+}
+
+#imageControlButtonList > li:last-child {
+    border-bottom-right-radius: var(--bs-border-radius) !important;
+    border-bottom-left-radius: var(--bs-border-radius) !important;
+}
+
+#uploadImageAccordion.accordion .accordion-item {
+    border: 0 !important;
+}
+
+#uploadImageAccordion .accordion-button::after {
+    flex-shrink: 0;
+    width: auto !important;
+    height: auto !important;
+    margin-left: auto !important;
+    content: normal !important;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    background-size: auto auto !important;
+    transition: none !important;
+}
+
+#uploadImageAccordion .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.z-index-negative {
+    z-index: -1;
+}

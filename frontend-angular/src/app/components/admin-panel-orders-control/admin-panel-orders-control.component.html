@@ -1,0 +1,41 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs nav-fill w-100" id="clientOrdersTab">
+    <li ngbNavItem class="">
+        <button ngbNavLink type="button" class="" [attr.orders-status-type]="'new'" (click)="clientOrdersTabClick($event)">
+            {{ 'ADMINPANEL.CLIENTORDERSTABPANESTEXT.NEW' | translate }}
+        </button>
+        <ng-template ngbNavContent>
+            <app-admin-panel-client-orders
+                [(prevCurrentSelectedOrdersStatusType)]="prevCurrentSelectedOrdersStatusType"
+                [(currentSelectedOrdersStatusType)]="currentSelectedOrdersStatusType"
+                [(currentSelectedClientLogin)]="currentSelectedClientLogin"
+                [(clientOrders)]="clientOrders"
+                [(ordersClientsData)]="ordersClientsData"
+                [(additionalOrdersExists)]="additionalOrdersExists"
+                [(additionalOrdersClientsExists)]="additionalOrdersClientsExists"
+                [(spinnerHidden)]="spinnerHidden"
+            ></app-admin-panel-client-orders>
+        </ng-template>
+    </li>
+    <li ngbNavItem class="">
+        <button ngbNavLink class="" type="button" [attr.orders-status-type]="'processed'" (click)="clientOrdersTabClick($event)">
+            {{ 'ADMINPANEL.CLIENTORDERSTABPANESTEXT.PROCESSED' | translate }}
+        </button>
+        <ng-template ngbNavContent>
+            <app-admin-panel-client-orders
+                [(prevCurrentSelectedOrdersStatusType)]="prevCurrentSelectedOrdersStatusType"
+                [(currentSelectedOrdersStatusType)]="currentSelectedOrdersStatusType"
+                [(currentSelectedClientLogin)]="currentSelectedClientLogin"
+                [(clientOrders)]="clientOrders"
+                [(ordersClientsData)]="ordersClientsData"
+                [(additionalOrdersExists)]="additionalOrdersExists"
+                [(additionalOrdersClientsExists)]="additionalOrdersClientsExists"
+                [(spinnerHidden)]="spinnerHidden"
+            ></app-admin-panel-client-orders>
+        </ng-template>
+    </li>
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</ul>
+<div class="d-flex align-items-center visually-hidden" [ngClass]="{ 'visually-hidden': spinnerHidden }">
+    <strong class="text-info fs-4" role="status">{{ 'SPINNERTITLES.PROCESSING' | translate }}</strong>
+    <div class="spinner-border text-info ms-auto" aria-hidden="true"></div>
+</div>

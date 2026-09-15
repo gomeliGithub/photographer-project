@@ -1,0 +1,68 @@
+:host ::ng-deep #changeDiscountAccordion .accordion-body {
+    padding: 1rem !important;
+}
+
+:host ::ng-deep #changeDiscountAccordion .form-check-input {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px), only screen
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    #datepickerContainer form div:first-child {
+        margin-bottom: 0.5rem;
+    }
+
+    :host ::ng-deep .changeDiscountButtonsContainer {
+        text-align: center;
+    }
+
+    :host ::ng-deep .changeDiscountButtonsContainer button:first-child {
+        margin-bottom: 0.5rem;
+    }
+
+    :host ::ng-deep .changeDiscountButtonsContainer button:last-child {
+        float: none !important;
+    }
+
+    :host ::ng-deep ngb-datepicker > .ngb-dp-content.ngb-dp-months {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+:host ::ng-deep ngb-datepicker {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}

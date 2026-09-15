@@ -1,0 +1,322 @@
+html {
+    height: 100%;
+}
+  
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.h-80 {
+    height: 80% !important;
+}
+
+.h-90 {
+    height: 90% !important;
+}
+
+.mw-70 {
+    max-width: 70% !important;
+}
+
+app-root a.nav-link, app-root a.dropdown-item {
+    cursor: pointer;
+}
+
+app-home, app-gallery, app-prices, app-about, app-client, app-admin-panel, app-admin-panel-orders-control, app-admin-panel-discounts-control, app-not-found {
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+    flex-grow: 1 !important;
+}
+
+app-home {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+app-gallery, app-prices, app-admin-panel-orders-control, app-admin-panel-discounts-control {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+app-gallery {
+    height: auto !important;
+}
+
+app-prices {
+    overflow-y: auto !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+app-about {
+    overflow-y: auto !important;
+}
+
+app-client {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+app-admin-panel, app-admin-panel-orders-control, app-admin-panel-client-orders, app-admin-panel-discounts-control {
+    margin-top: 5rem !important;
+}
+
+app-admin-panel-discounts-control {
+    margin-bottom: 5rem !important;
+}
+
+app-admin-panel {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 1rem !important;
+}
+
+@media screen and (max-width: 768px), only screen
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    .btn-outline-secondary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #6c757d;
+    }
+
+    .btn-outline-success {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #198754;
+    }
+
+    .btn-outline-danger {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #dc3545;
+    }
+
+    .btn-outline-info {
+        --bs-btn-color: #000;
+        --bs-btn-bg: #0dcaf0;
+    }
+
+    .btn-outline-light {
+        --bs-btn-color: #000;
+        --bs-btn-bg: #f8f9fa;
+    }
+}
+
+.imagesCarouselContainer {
+    max-height: 100vh !important;
+}
+
+.imagesCarousel .carousel-inner {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.imagesCarousel .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23fff" class="bi bi-caret-left" viewBox="0 0 16 16"><path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/></svg>');
+}
+
+.imagesCarousel .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23fff" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/></svg>');
+}
+
+.imagesCarousel .carousel-indicators button {
+    height: 6px!important;
+}
+
+
+@media screen and (max-width: 576px), only screen 
+and (width: 393px) 
+and (height: 852px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 430px) 
+and (height: 932px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 390px) 
+and (height: 844px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 428px) 
+and (height: 926px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 812px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 2),
+only screen 
+and (width: 414px) 
+and (height: 896px) 
+and (-webkit-device-pixel-ratio: 3),
+only screen 
+and (width: 375px) 
+and (height: 667px) 
+and (-webkit-device-pixel-ratio: 2) {
+    .imagesCarousel .carousel-item img {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 677px) { /* NEW */
+    app-prices {
+        width: auto !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .imagesCarousel .carousel-item img {
+        max-height: 490px;
+    }
+}
+
+@media screen and (min-width: 735px) {
+    .imagesCarousel .carousel-item img {
+        max-height: 640px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .imagesCarousel .carousel-item img {
+        max-height: 930px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .imagesCarousel .carousel-item img {
+        max-height: 1160px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1208px) {
+    app-admin-panel {
+        margin-top: 7rem !important;
+    }
+}
+
+textarea {
+    resize: none;
+    height: 150px !important;
+    min-width: 120px !important;
+}
+
+input.ng-touched.ng-invalid {
+    border: solid red 2px;
+}
+input.ng-touched.ng-valid {
+    border: solid green 2px;
+}
+
+.pointerEventsNone {
+    pointer-events: none;
+    overflow-y: hidden;
+    visibility: hidden;
+}
+
+.pointerEventsNone > *:not(:last-child) {
+    display: none !important;
+}
+
+.pointerEventsNone2{
+    pointer-events: none;
+    overflow-y: hidden;
+}
+
+.pointerEventsNone2 #ngbProgressbarContainer {
+    pointer-events: auto;
+}
+
+ngb-accordion .accordion-button {
+    box-shadow: none !important;
+}
+
+ngb-accordion .accordion-body {
+    padding: 0 !important;
+}
+
+.font-family-caveat-brush-regular {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-family-sue-ellen-francisco-regular {
+    font-family: "Sue Ellen Francisco", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-family-pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-family-dancing-script-bold {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-family-roboto-mono-light {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}

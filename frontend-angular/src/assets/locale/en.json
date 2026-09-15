@@ -1,0 +1,324 @@
+{
+	"DEFAULTSUCCESSMESSAGE": "Operation completed successfully",
+	"DEFAULTERRORMESSAGE": "Something went wrong. Try again",
+	"PAGETITLES": {
+		"HOME": "Home",
+		"GALLERY": "Portfolio",
+		"PRICES": "Price-list",
+		"ABOUT": "About Me",
+		"ADMINPANEL": {
+			"MAIN": "Admin panel",
+			"IMAGESCONTROL": "Images control",
+			"ORDERSCONTROL": "Orders control",
+			"DISCOUNTSCONTROL": "Discounts control"
+		},
+		"SIGNUP": "Sign up",
+		"SIGNIN": "Sign in",
+		"NOTFOUND": "Resource is not found"
+	},
+	"SCROLLSNAPITEMSTEXT": {
+		"DISCOUNTS": "Discounts",
+		"PORTFOLIOOVERVIEW": "Portfolio"
+	},
+	"NOIMAGESMESSAGE": "No images yet",
+	"CHANGECLIENTLOCALESUCCESSMESSAGE": "Language changed successfully",
+	"HOMEPAGE": {
+		"HEADERTITLE": "Portfolio",
+		"PHOTOGRAPHYTYPESLINKTEXT": "View works",
+		"ABOUTTEXT": {
+			"PART1": "Hello, my name is Maria Burtseva and I am a professional photographer. I live and film in Gomel. And also throughout Belarus and the World.",
+			"PART2": "I have been photographing for over five years. Mostly weddings and private portraits, I have extensive experience in making your memories beautiful and unforgettable.",
+			"PART3": "The main rule that I adhere to in my work is that the final result should be bright photographs that will delight you and remind you of your event. If I describe my photographs, then on the one hand I can create a beautiful, bright fairy tale, immersing the heroes of my photographs into the world of bright pictures and bright memories. On the other hand, I capture the moment and convey the mood of the event, making a report about it emotional and lively, that’s what my clients say, that’s what they like.",
+			"PART4": "Do you want to save your emotions? Or do you want ringing stylish photos like in a glossy magazine? You want your photos to be warm, bright, rich, lively and emotional. That means you and I think alike, that means we’re on the same path."
+		}
+	},
+	"GALLERYPAGE": {
+		"HEADERTITLE": "Burtseva Maria",
+		"ORDERBUTTONTEXT": "Order a photo session",
+		"DOWNLOADORIGINALIMAGEBUTTONTEXT": "Download original",
+		"HELPBLOCKS": {
+			"CLIENTPHONENUMBER": "Your phone number in developing format.",
+			"COMMENT": "Your comment or request for your order."
+		},
+		"CLIENTORDERSUCCESSMESSAGE": "The order has been sent successfully. I will contact you shortly"
+	},
+	"PRICESCONTAINER": {
+		"STANDARDPACKAGETITLE": "PACKAGE STANDART",
+		"MAXIMUMPACKAGETITLE": "PACKAGE MAXIMUM",
+		"INDIVIDUAL": {
+			"STANDARDPACKAGE": {
+				"PART1": "Shooting duration 1 hour",
+				"PART2": "30+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Completion time 10-14 days",
+				"PART5": "70 BYN"
+			}
+		}, 
+		"CHILDREN": {
+			"STANDARDPACKAGE": {
+				"PART1": "Shooting duration 1 hour",
+				"PART2": "30+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Completion time 10-14 days",
+				"PART5": "50 BYN"
+			}
+		}, 
+		"WEDDING": {
+			"STANDARDPACKAGE": {
+				"PART1": "Shooting duration 3 hours",
+				"PART2": "100+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Photo studio rental INCLUDED in the price",
+				"PART5": "Completion time 10-14 days",
+				"PART6": "450 BYN"
+			},
+			"MAXIMUMPACKAGE": {
+				"PART1": "Shooting duration from 3 to 8 hours",
+				"PART2": "300+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Photo studio rental INCLUDED in the price",
+				"PART5": "Completion time 10-14 days",
+				"PART6": "1000 BYN"
+			}
+		}, 
+		"FAMILY": {
+			"STANDARDPACKAGE": {
+				"PART1": "Shooting duration 1 hour",
+				"PART2": "30+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Completion time 10-14 days",
+				"PART5": "100 BYN"
+			},
+			"MAXIMUMPACKAGE": {
+				"PART1": "Shooting duration 3 hours",
+				"PART2": "60+ photos",
+				"PART3": "Color correction, light retouching",
+				"PART4": "Completion time 10-14 days",
+				"PART5": "300 BYN"
+			}
+		}
+	},
+	"CLIENTPAGE": {
+		"PASSWORDSHOWSWITCHTEXT": "Show password",
+		"PASSWORDHIDESWITCHTEXT": "Hide password",
+		"LOGININVALIDMESSAGE": "Incorrect login",
+		"PASSWORDINVALIDMESSAGE": "Incorrect password",
+		"FULLNAMEINVALIDMESSAGE": "Incorrect full name",
+		"EMAILINVALIDMESSAGE": "Incorrect email",
+		"HELPBLOCKS": {
+			"LOGIN": "Your login must be from 4 to 15 characters long and contain only Latin characters and (or) numbers.",
+			"PASSWORD": "Your password must be 5-20 characters long.",
+			"FULLNAME": "Your full name must be between 3 and 25 characters long.",
+			"EMAIL": "(Optional) Your email address."
+		},
+		"ACCOUNTHAVEMESSAGES": {
+			"HAVE": "Already have an account?",
+			"HAVENT": "Don't have an account yet?"
+		},
+		"SIGNERRORTEXT": "Wrong login or password"
+	},
+	"NOTFOUNDPAGE": {
+		"MAINTEXT": "The resource you are trying to open does not exist.",
+		"SECONDARYTEXT": "The requested resource is not found.",
+		"GOHOMETEXT": "Go Home"
+	},
+    "CLIENTMENU": {
+		"TITLE": "Account",
+		"SIGNUPTEXT": "Sign Up",
+        "SIGNINTEXT": "Sign In",
+        "SIGNOUTTEXT": "Sign Out",
+        "NONSIGNINTEXT": "Guest"
+    },
+    "LOGINFORM": {
+		"TITLE": "Sign In",
+        "LOGINLABELTEXT": "Login *",
+		"PASSWORDLABELTEXT": "Password *",
+		"FULLNAMELABELTEXT": "Full name *",
+		"NOLOGINTEXT": "Login not specified",
+		"NOPASSWORDTEXT": "Password not specified",
+		"CONFIRMBUTTONCAPTIONTEXT": "Sign In"
+	},
+	"SENDORDERFORM": {
+		"ORDERTYPETEXT": "Order type *",
+		"CLIENTPHONENUMBERTEXT": "Phone number *",
+		"COMMENTTEXT": "Comment or wish",
+		"ORDERTYPEINVALIDMESSAGE": "Incorrect order type",
+		"CLIENTPHONENUMBERINVALIDMESSAGE": "Incorrect phone number",
+		"SUBMITBUTTONTEXT": "Send order"
+	},
+	"MODAL": {
+		"SUCCESSTITLE": "Success",
+		"WARNINGTITLE": "Warning",
+		"ERRORTITLE": "Error",
+		"BUTTONS": {
+			"CONFIRMCAPTIONTEXT": "Close"
+		}
+	},
+	"UPLOADIMAGERESPONSES": {
+		"WRONGDISPLAYTYPE": "Inappropriate image orientation",
+		"PREVIOUSUPLOADIMAGEOPERATIONISACTIVE": "The previous process of uploading a new image has not been completed",
+		"NOTSUPPORTEDFORMAT": "Image format not supported",
+		"PENDING": "The server is busy. Please try again later",
+		"FILEEXISTS": "A image with the same name has already been uploaded",
+		"MAXCOUNT": "Maximum number of images uploaded",
+		"MAXSIZE": "Maximum image size - 100 MB",
+		"MAXNAMELENGTH": "The image name must contain at least 4 characters",
+		"FINISH": "Image uploaded successfully"
+	},
+	"UPLOADIMAGE_CANSELBUTTONTEXT": "Cancel",
+	"UPLOADIMAGE_CANSELMESSAGE": "Image upload canceled",
+	"UPLOADIMAGE_PENDINGMESSAGE": "Maximum number of active image downloads. Please try again later",
+	"ADMINPANEL": {
+		"BOOLEANTRUETEXT": "Yes",
+		"BOOLEANFALSETEXT": "No",
+		"IMAGETHUMBNAILCONTAINERCAPTION": "Preview",
+		"NOIMAGESMESSAGE": "No images uploaded yet",
+		"NOCLIENTORDERSMESSAGE": "No new orders yet",
+		"NOCLIENTORDERSMESSAGES": {
+			"NEWORDERS": "No new orders yet",
+			"PROCESSEDORDERS": "No processed orders yet"
+		},
+		"NOCLIENTWITHNEWORDERSMESSAGES": {
+			"NEWORDERS": "No clients with new orders yet",
+			"PROCESSEDORDERS": "No clients with processed orders yet"
+		},
+		"NODISCOUNTSMESSAGE": "No discounts yet",
+		"DELETEIMAGESUCCESSMESSAGE": "Image deleted successfully",
+		"MAXCOUNTONHOMEPAGEMESSAGE": "Maximum number of images displayed",
+		"TABLECAPTION": "Image management",
+		"SECONDTABLECAPTION": "Manage data for photography types",
+		"CHANGEPHOTOGRAPHYTYPEDESCRIPTIONBUTTON": "Change description",
+		"CHANGEPHOTOGRAPHYTYPEDESCRIPTIONBUTTONINVALIDMESSSAGE": "Maximum 40 characters.",
+		"CHANGEDISCOUNTACCORDIONBUTTONTEXT": "Discount data №",
+		"CHANGEDISCOUNTEXPIRATIONDATECHANGEBUTTONTEXT": "Change",
+		"CHANGEDISCOUNTEXPIRATIONDATEDELETEBUTTON": "Удалить",
+		"CHANGEDISCOUNTMAXCOUNTMESSAGE": "Maximum number of discounts 3",
+		"SEARCHIMAGESFORM": {
+			"INPUTSDATETEXT": "Date of upload",
+			"INPUTDATEFROMLABELTEXT": "From",
+			"INPUTDATEUNTILLABELTEXT": "Until",
+			"INPUTPHOTOGRAPHYTYPETEXT": "Photography types",
+			"INPUTDISPLAYTYPETEXT": "Display types",
+			"INPUTSORTBYLABELTEXT": "Sort by",
+			"SORTBYTEXT": {
+				"ORIGINALNAME": "Original name",
+				"ORIGINALSIZE": "Original image size",
+				"PHOTOGRAPHYTYPE": "Photography type",
+				"DISPLAYTYPE": "Display type",
+				"UPLOADDATE": "Upload date",
+				"DISPLAYEDONHOMEPAGE": "Displayed on home page",
+				"DISPLAYEDONGALLERYPAGE": "Displayed on gallery page"
+			},
+			"ACCORDIONTITLETEXT": "Search images",
+			"SUBMITBUTTONTEXT": "Search",
+			"RESETBUTTONTEXT": "Clear definition criteria"
+		},
+		"TABLECOLTITLES": {
+			"ORIGINALNAME": "Original name",
+			"ORIGINALSIZE": "Original image size",
+			"IMAGEPHOTOGRAPHYTYPE": "Photography type",
+			"DISPLAYTYPE": "Display type",
+			"UPLOADAT": "Upload at",
+			"ONHOMEPAGE": "Displayed on Home page",
+			"ONGALLERYPAGE": "Displayed on Gallery page",
+			"IMAGEPHOTOGRAPHYTYPEDESCRIPTION": "Description"
+		},
+		"CLIENTORDERSTABLECOLTITLES": {
+			"IMAGEPHOTOGRAPHYTYPE": "Photography type",
+			"TYPE": "Order type",
+			"CLIENTPHONENUMBER": "Client phone number",
+			"CLIENTCOMMENT": "Additional information from the client",
+			"CREATEDDATE": "Created date"
+		},
+		"ADDITIONALCOMPRESSEDIMAGESBUTTONTEXT": "More images",
+		"CLIENTORDERSTABLECHANGESTATUSBUTTONTEXT": "Mark as processed",
+		"GUESTLOGINTEXT": "Guest",
+		"ADDITIONALCLIENTORDERSBUTTONTEXT": "More orders",
+		"ADDITIONALCLIENTORDERSINFODATABUTTONTEXT": "More clients",
+		"CLIENTORDERSTABPANESTEXT": {
+			"NEW": "New orders",
+			"PROCESSED": "Processed orders"
+		},
+		"SELECTEDCLIENTTEXT": "Selected client: ",
+		"IMAGECONTROLTEXT": {
+			"TITLE": "Control",
+			"DELETEBUTTON": "Delete",
+			"MOVETOHOMEPAGEBUTTON": "To the home",
+			"MOVETOGALLERYPAGEBUTTON": "To the gallery",
+			"MOVETOARCHIVEBUTTON": "To the archive",
+			"SETPHOTOGRAPHYTYPEIMAGE": {
+				"INDIVIDUALBUTTONTEXT": "Set as the link image for individual photo gallery", 
+				"CHILDRENBUTTONTEXT": "Set as the link image for children photo gallery", 
+				"WEDDINGBUTTONTEXT": "Set as the link image for wedding photo gallery",
+				"FAMILYBUTTONTEXT": "Set as the link image for family photo gallery"
+			}
+		},
+		"CHANGEIMAGEDATATEXT": {
+			"SHOWDATABUTTONTOOLTIP": "Hide / Show data",
+			"PLACEHOLDERTEXT": "No text",
+			"CHANGEBUTTON": "Confirm changes"
+		},
+		"UPLOADIMAGETEXT": {
+			"PHOTOGRAPHYTYPE": "Photography type *",
+			"DISPLAYTYPE": "Display type *",
+			"INVALIDPHOTOGRAPHYTYPE": "Photography type not selected",
+			"INVALIDDISPLAYTYPE": "Display type not selected",
+			"INVALIDSELECTIMAGE": "No image selected",
+			"DESCRIPTION": "Individual image description",
+			"BUTTON": "Upload new image"
+		},
+		"CREATEDISCOUNTTEXT": {
+			"CONTENT": "Discount content *",
+			"EXPIRATIONDATE": "Activity period *",
+			"INVALIDCONTENT": "No content specified, any number of characters greater than 50",
+			"INVALIDEXPIRATIONDATE": "Activity period not selected",
+			"BUTTON": "Create discount"
+		},
+		"IMAGESIZES": {
+			"BYTE": "byte",
+			"KBYTE": "КB",
+			"MBYTE": "МB",
+			"GBYTE": "ГB",
+			"TBYTE": "ТB"
+		},
+		"PREVIOUSACTIVEIMAGEOPERATIONSMESSAGES": {
+			"CHANGEDATA": "The previous image data modification operation has not completed",
+			"DELETE": "The previous image deletion operation has not completed",
+			"CHANGEDISPLAYTARGET": "The previous operation to change the image display location has not been completed",
+			"SETPHOTOGRAPHYTYPE": "The previous image setup operation for the shooting mode has not been completed",
+			"GETFULLCOMPRESSEDLIST": "The previous image list loading operation has not completed",
+			"GETTHUMBNAIL": "The previous operation to load a reduced-size copy of the image did not complete",
+			"CHANGEPHOTOGRAPHYTYPEDESCRIPTION": "The previous operation to change the shooting mode description did not complete"
+		}
+	},
+	"IMAGEPHOTOGRAPHYTYPES": {
+		"INDIVIDUAL": "Individual", 
+		"CHILDREN": "Children", 
+		"WEDDING": "Wedding", 
+		"FAMILY": "Family"
+	},
+	"IMAGEPHOTOGRAPHYTYPESFULLTEXT": {
+		"INDIVIDUAL": "Individual photography", 
+		"CHILDREN": "Children photography", 
+		"WEDDING": "Wedding photography", 
+		"FAMILY": "Family photography"
+	},
+	"IMAGEDISPLAYTYPES": {
+		"HORIZONTAL": "Horizontal",
+		"VERTICAL": "Vertical"
+	},
+	"CLIENTORDERTYPES": {
+		"CONSULTATION": "Consultation",
+		"FULL": "Full"
+	},
+	"CLIENTORDERSTATUSES": {
+		"NEW": "New",
+		"PROCESSED": "Processed"
+	},
+    "PROGRESSBAR": {
+		"TITLE": "Upload image..."
+	},
+	"SPINNERTITLES": {
+		"PROCESSING": "Processing..."
+	}
+}

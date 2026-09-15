@@ -1,0 +1,209 @@
+<nav class="navbar navbar-expand-lg navbar-light w-100 fixed-top" style="background-color: transparent;" #navbar id="targetRed"
+    [@navbar-animation]="navbarAnimationState"
+    [ngClass]="{ 'bg-gradient': navbarAnimationState === 'scrolled' }"
+    (mouseleave)="menuMove(false)"
+    (mouseleave)="menuMove(false)"
+    (mouseleave)="menuMove(false)"
+>
+    <div class="container-fluid">
+        <button class="navbar-toggler" id="navbarTogglerButton" type="button" aria-controls="navbarNavDropdown"
+            [@navbar-toggler-icon-trigger]="navbarTogglerIconTriggerState"
+            (click)="changeNavbarTogglerIconTriggerState()"
+            (click)="navbarTogglerClick()"
+
+            [attr.aria-expanded]="!navbarIsCollapsed"
+        >
+            <span class="icon-bar top-bar d-block mb-1 border-1" [@top-bar-animation]="navbarTogglerIconTriggerState"></span>
+            <span class="icon-bar middle-bar d-block mb-1 border-1" [@middle-bar-animation]="navbarTogglerIconTriggerState"></span>
+            <span class="icon-bar bottom-bar d-block border-1" [@bottom-bar-animation]="navbarTogglerIconTriggerState"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNavDropdown" [ngbCollapse]="navbarIsCollapsed">
+            <ul class="navbar-nav flex-grow-1 justify-content-evenly align-content-center flex-wrap w-100 font-family-caveat-brush-regular">
+                <li class="nav-item">
+                    <a class="" class="nav-link active" aria-current="page" [routerLink]="[ '/' ]"
+                        [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }"
+                        (click)="goToTargetAnchor()"
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-house"></i>
+                        </span>
+                        {{ 'PAGETITLES.HOME' | translate }}
+                    </a>
+                </li>
+                <li *ngIf="discountsDataIsExists" class="nav-item">
+                    <button class="nav-link"
+                        [ngClass]="{ 
+                            'text-white': navbarAnimationState === 'static' && isHomePage
+                        }"
+                        (click)="goToTargetAnchor()"
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-house-fill"></i>
+                        </span>
+                        {{ ( 'SCROLLSNAPITEMSTEXT.DISCOUNTS' ) | translate }}
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link"
+                        [ngClass]="{ 
+                            'text-white': navbarAnimationState === 'static' && isHomePage
+                        }"
+                        (click)="goToTargetAnchor('portfolio_header')"
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-house-fill"></i>
+                        </span>
+                        {{ ( 'SCROLLSNAPITEMSTEXT.PORTFOLIOOVERVIEW' ) | translate }}
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="" class="nav-link active" aria-current="page" [routerLink]="[ '/prices' ]"
+                        [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }" 
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-shop-window"></i>
+                        </span>
+                        {{ 'PAGETITLES.PRICES' | translate }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="" class="nav-link active" aria-current="page" [routerLink]="[ '/about' ]"
+                        [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }" 
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-info-square"></i>
+                        </span>
+                        {{ 'PAGETITLES.ABOUT' | translate }}
+                    </a>
+                </li>
+                <li *ngIf="activeClientType && activeClientType === 'admin'" class="nav-item me-4" ngbDropdown display="dynamic" #adminPanelMenu="ngbDropdown">
+                    <button class="nav-link" type="button" id="adminPanelMenuButton"
+                        [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }" 
+                        ngbDropdownToggle
+                        (mouseenter)="menuMove(true, adminPanelMenu)"
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-menu-button-wide"></i>
+                        </span>
+                        {{ 'PAGETITLES.ADMINPANEL.MAIN' | translate }}
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="adminPanelMenuButton" ngbDropdownMenu (mouseleave)="menuMove(false, adminPanelMenu)">
+                        <li>
+                            <a class="" ngbDropdownItem [routerLink]="[ '/adminPanel' ]" routerLinkActive="">
+                                <span class="fs-5">
+                                    <i class="bi bi-1-circle"></i>
+                                </span>
+                                {{ 'PAGETITLES.ADMINPANEL.IMAGESCONTROL' | translate }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" ngbDropdownItem [routerLink]="[ '/adminPanel/ordersControl' ]">
+                                <span class="fs-5">
+                                    <i class="bi bi-2-circle"></i>
+                                </span>
+                                {{ 'PAGETITLES.ADMINPANEL.ORDERSCONTROL' | translate }}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" ngbDropdownItem [routerLink]="[ '/adminPanel/discountsControl' ]">
+                                <span class="fs-5">
+                                    <i class="bi bi-3-circle"></i>
+                                </span>
+                                {{ 'PAGETITLES.ADMINPANEL.DISCOUNTSCONTROL' | translate }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" ngbDropdown display="dynamic" #clientMenu="ngbDropdown">
+                    <button class="nav-link" type="button" id="clientMenuButton"
+                        [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }"
+                        ngbDropdownToggle
+                        (mouseenter)="menuMove(true, clientMenu)"
+                    >
+                        <span class="fs-5">
+                            <i class="bi bi-person-circle"></i>
+                        </span>
+                        {{ 'CLIENTMENU.TITLE' | translate }}
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="clientMenuButton" ngbDropdownMenu (mouseleave)="menuMove(false, clientMenu)">
+                        <li *ngIf="!activeClientLogin">
+                            <a class="" ngbDropdownItem [routerLink]="[ '/sign/up' ]">
+                                <span class="fs-5">
+                                    <i class="bi bi-person-add"></i>
+                                </span>
+                                {{ 'CLIENTMENU.SIGNUPTEXT' | translate }}
+                            </a>
+                        </li>
+                        <li *ngIf="!activeClientLogin">
+                            <a class="" ngbDropdownItem [routerLink]="[ '/sign/in' ]">
+                                <span class="fs-5">
+                                    <i class="bi bi-box-arrow-in-right"></i>
+                                </span>
+                                {{ 'CLIENTMENU.SIGNINTEXT' | translate }}
+                            </a>
+                        </li>
+                        <li *ngIf="activeClientLogin">
+                            <button type="button" class="" ngbDropdownItem (click)="signOut()">
+                                <span class="fs-5">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                </span>
+                                {{ 'CLIENTMENU.SIGNOUTTEXT' | translate }}
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-text flex-grow-0 user-select-none text-end font-family-caveat-brush-regular">
+                <span *ngIf="activeClientLogin; else noActiveClientBlock">
+                    <span class="fw-bold" 
+                        [ngClass]="{ 'text-success': navbarAnimationState === 'scrolled', 'text-info': navbarAnimationState === 'static' }"
+                    >
+                        {{ activeClientLogin }}
+                    </span>
+                    <small class="d-block text-nowrap" [ngClass]="{ 'text-white': navbarAnimationState === 'static' && isHomePage }">
+                        {{ activeClientFullName }}
+                    </small>
+                </span>
+                <ng-template #noActiveClientBlock>  
+                    <span class="text-warning">{{ 'CLIENTMENU.NONSIGNINTEXT' | translate }}</span>
+                </ng-template>
+            </div>
+            <ul class="navbar-nav ms-2 me-3 text-end float-end font-family-caveat-brush-regular">
+                <li class="nav-item" ngbDropdown display="dynamic" #changeClientLocaleMenu="ngbDropdown">
+                    <button type="button" class="nav-link" id="dropdownMenuButton"
+                        [ngClass]="{ 'text-info': navbarAnimationState === 'static' }"
+                        ngbDropdownToggle
+                        (mouseenter)="menuMove(true, changeClientLocaleMenu)"
+                    >
+                        {{ activeClientLocale }}
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" ngbDropdownMenu aria-labelledby="dropdownMenuButton" (mouseleave)="menuMove(false, changeClientLocaleMenu)">
+                        <li *ngFor="let locale of locales">
+                            <button type="button" class="" ngbDropdownItem [id]="locale.code" (click)="changeClientLocale($event)">{{ locale.code }} ({{ locale.title }})</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="overflow-x-hidden overflow-y-scroll w-100 h-100 flex-grow-1" id="main-container" appGlobalScroll> <!-- NEW -->
+    <router-outlet (activate)="onRouterOutlet($event)"></router-outlet>
+</div> <!-- NEW -->
+
+<footer class="flex-grow-0 flex-shrink-1 bottom-0 position-absolute w-100 text-center text-white" style="background-color: #f1f1f1;"
+    [@footer-animation]="footerAnimationState"
+    #footer
+>
+    <div class="container">
+        <section class="">
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/burtseva__maria" role="button">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </section>
+    </div>
+    <div class="text-center text-dark p-3 rounded" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2026 Copyright: -. <span class="text-danger">Work In Progress...</span>
+    </div>
+</footer>
