@@ -60,3 +60,59 @@ types/node_modules/
 # Compiled output
 types/dist/
 types/*.tsbuildinfo
+
+# ----- Next.js ------
+
+# Сборка и логи
+# ==========================================
+# Основная папка сборки Next.js
+frontend-react/.next/
+frontend-react/out/
+# Логи npm, yarn и pnpm
+frontend-react/npm-debug.log*
+frontend-react/yarn-debug.log*
+frontend-react/yarn-error.log*
+frontend-react/pnpm-debug.log*
+frontend-react/lerna-debug.log*
+
+# dependencies
+frontend-react/node_modules/
+
+# Переменные окружения (Секреты)
+# ==========================================
+# Игнорируем файлы с реальными ключами, но ОСТАВЛЯЕМ .env.example
+frontend-react/.env
+frontend-react/.env.local
+frontend-react/.env.development.local
+frontend-react/.env.test.local
+frontend-react/.env.production.local
+
+# production
+frontend-react/build
+
+# testing
+frontend-react/coverage/
+frontend-react/.nyc_output/
+
+# Системные файлы и кэш редакторов
+# ==========================================
+frontend-react/.DS_Store
+frontend-react/*.pem
+frontend-react/.idea/
+frontend-react/.vscode/
+frontend-react/*.suo
+frontend-react/*.ntvs*
+frontend-react/*.njsproj
+frontend-react/*.sln
+frontend-react/*.sw?
+
+frontend-react/*.md
+
+# Инструменты сборки и линтеры
+# ==========================================
+frontend-react/.vercel
+frontend-react/.turbo
+
+# typescript
+frontend-react/*.tsbuildinfo
+frontend-react/next-env.d.ts
