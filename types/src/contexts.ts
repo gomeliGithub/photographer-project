@@ -1,6 +1,6 @@
 import { type Dispatch } from "react";
 
-import { IActiveClientState, INavbarState } from "./states";
+import { IActiveClientState, IModalState, INavbarState } from "./states";
 
 export interface IBodyContext {
     activeClientData: IActiveClientState;
@@ -9,4 +9,7 @@ export interface IBodyContext {
     setNavbarState: Dispatch<INavbarState> | null;
     navbarTogglerListener: ( animationStart: boolean ) => void;
     isDesktopDevice: boolean;
+    modalData: IModalState;
+    setModalData: Dispatch<IModalState>;
+    modalCloseListener: () => void;
 }

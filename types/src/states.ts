@@ -1,5 +1,6 @@
 import { IClientBrowser, Image_photography_types } from "./global";
 import { ICompressedImageWithoutRelationFields, IDiscount, IImagePhotographyType } from "./models";
+import { IModalProps } from "./props";
 
 export interface INavbarState {
     element?: HTMLElement | null,
@@ -13,22 +14,7 @@ export interface IActiveClientState {
     loading?: boolean;
 }
 
-export interface IHomePageDataState {
-    compressedImages?: ICompressedImageWithoutRelationFields[] | null;
-    discountsArr?: IDiscount[] | null;
-    imagePhotographyTypes?: IImagePhotographyType[][] | null;
-    isDesktopDevice?: boolean;
-}
-
-export interface IGalleryPageDataState {
-    compressedImages?: {
-        individual?: ICompressedImageWithoutRelationFields[] | null;
-        children?: ICompressedImageWithoutRelationFields[] | null;
-        wedding?: ICompressedImageWithoutRelationFields[] | null;
-        family?: ICompressedImageWithoutRelationFields[] | null;
-    };
-    photographyType?: Image_photography_types;
-    photographyTypeDescription?: string | null;
-    currentImagesCount?: number;
-    additionalImagesExists?: boolean;
+export interface IModalState {
+    isOpen: boolean;
+    props: IModalProps | null;
 }
