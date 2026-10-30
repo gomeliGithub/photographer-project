@@ -1,8 +1,9 @@
 import { type Dispatch } from "react";
 
-import { INavbarState } from "./states";
+import { IActiveClientState, INavbarState } from "./states";
 
 export interface IBodyContext {
+    activeClientData: IActiveClientState;
     isHomePage: boolean;
     navbarState: INavbarState | null;
     setNavbarState: Dispatch<INavbarState> | null;

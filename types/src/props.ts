@@ -1,3 +1,4 @@
+import { Image_photography_types } from "./global";
 import { ICompressedImageWithoutRelationFields, IDiscount } from "./models";
 
 export interface ICarouselProps {
@@ -6,4 +7,9 @@ export interface ICarouselProps {
     interval?: number | null, 
     controls?: boolean, 
     indicators?: boolean
+}
+
+export interface IGalleryCarouselProps {
+    imageData: ICompressedImageWithoutRelationFields[];
+    photographyType: Image_photography_types;
 }
