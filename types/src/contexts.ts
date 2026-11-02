@@ -5,11 +5,15 @@ import { IActiveClientState, IModalState, INavbarState } from "./states";
 export interface IBodyContext {
     activeClientData: IActiveClientState;
     isHomePage: boolean;
-    navbarState: INavbarState | null;
-    setNavbarState: Dispatch<INavbarState> | null;
-    navbarTogglerListener: ( animationStart: boolean ) => void;
+    navbar: {
+        state: INavbarState | null;
+        setState: Dispatch<INavbarState> | null;
+        togglerListener: ( animationStart: boolean ) => void;
+    };
     isDesktopDevice: boolean;
-    modalData: IModalState;
-    setModalData: Dispatch<IModalState>;
-    modalCloseListener: () => void;
+    modal: {
+        data: IModalState;
+        setData: Dispatch<IModalState>;
+        closeListener: () => void;
+    };
 }
