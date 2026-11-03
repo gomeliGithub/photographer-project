@@ -24,4 +24,10 @@ export interface IFormProccesingState {
     clientPassword?: string | null;
     clientFullName?: string | null;
     clientEmail?: string | null;
+    validationStatus?: {
+        login?: boolean;
+        password?: boolean;
+        fullName?: boolean;
+        email?: boolean;
+    }
 }
