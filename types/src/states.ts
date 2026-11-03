@@ -18,3 +18,10 @@ export interface IModalState {
     isOpen: boolean;
     props: IModalProps | null;
 }
+
+export interface IFormProccesingState {
+    clientLogin?: string | null;
+    clientPassword?: string | null;
+    clientFullName?: string | null;
+    clientEmail?: string | null;
+}

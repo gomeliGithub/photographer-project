@@ -35,3 +35,11 @@ export interface IGlobalErrorBoundaryProps {
     error: Error & { digest?: string };
     retry: () => void
 }
+
+export interface ITooltipProps {
+    text: string;
+}
+
+export interface IFormProccesingProps {
+    signOperation: 'up' | 'in';
+}
