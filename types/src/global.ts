@@ -5,18 +5,8 @@ import type { Client_order_type, Image_display_type, Image_photography_type } fr
 import type { IClientSignData, IJWTPayload } from "./sign";
 import type { IClientOrderWithoutRelationFields, ICompressedImageWithoutRelationFields } from "./models";
 
-export const Image_photography_types = {
-    individual: "individual",
-    children: "children",
-    wedding: "wedding",
-    family: "family"
-} as const
 export type Image_photography_types = "individual" | "children" | "wedding" | "family";
 export type Image_display_types = "horizontal" | "vertical";
-export const Image_display_types = {
-    horizontal: "horizontal",
-    vertical: "vertical"
-} as const
 export type Client_order_statuses = "new" | "processed";
 export type Client_order_types = "consultation" | "full";
 
