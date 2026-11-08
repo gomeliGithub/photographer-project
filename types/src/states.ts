@@ -31,3 +31,18 @@ export interface IFormProccesingState {
         email?: boolean;
     }
 }
+
+export interface ISendOrderFormState {
+    orderType: {
+        value: 'consultation' | 'full';
+        validationStatus: boolean;
+    };
+    phoneNumber: {
+        value: string | null;
+        validationStatus: boolean;
+    };
+    orderComment: {
+        value: string | null;
+        validationStatus: boolean;
+    };
+}

@@ -1,5 +1,7 @@
-import { SyntheticEvent } from "react";
-import { type ModalProps } from 'react-bootstrap';
+import { type ReactNode, type JSXElementConstructor, type ReactElement, type SyntheticEvent } from "react";
+import { type Placement } from "react-bootstrap/esm/types";
+import { type OverlayTriggerRenderProps } from "react-bootstrap/esm/OverlayTrigger";
+
 import { Image_photography_types } from "./global";
 import { ICompressedImageWithoutRelationFields, IDiscount } from "./models";
 
@@ -38,6 +40,8 @@ export interface IGlobalErrorBoundaryProps {
 
 export interface ITooltipProps {
     text: string;
+    placement: Placement;
+    bodyElement: ReactElement<unknown, string | JSXElementConstructor<any>> | ((props: OverlayTriggerRenderProps) => ReactNode);
 }
 
 export interface IFormProccesingProps {
