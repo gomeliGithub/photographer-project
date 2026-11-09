@@ -38,7 +38,10 @@ async function bootstrap() {
     app.useGlobalFilters(new HttpExceptionFilter(appService));
     app.useGlobalInterceptors(new BigIntInterceptor(), new CacheInterceptor());
 
-    await app.listen(parseInt(process.env['SERVER_API_PORT'] as string));
+    const port: number = process.env['SERVER_API_PORT'] ? parseInt(process.env['SERVER_API_PORT'], 10) : 3000;
+    const correctPort: number = isNaN(port) ? 3000 : port;
+
+    await app.listen(correctPort);
 }
 
 bootstrap();
