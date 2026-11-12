@@ -12,8 +12,8 @@
 Thumbs.db
 
 
-# ----- Nest.js -----
 
+# ----- Nest.js -----
 
 # Server files
 backend-nest/files/
@@ -36,8 +36,8 @@ backend-nest/logs
 backend-nest/prisma/migrations/
 
 
-# ----- Angular -----
 
+# ----- Angular -----
 
 # Node
 frontend-angular/node_modules/
@@ -51,8 +51,8 @@ frontend-angular/src/*.tsbuildinfo
 frontend-angular/.angular/cache/
 
 
-# ----- Types -----
 
+# ----- Types -----
 
 # Node
 types/node_modules/
@@ -61,7 +61,10 @@ types/node_modules/
 types/dist/
 types/*.tsbuildinfo
 
+
+
 # ----- Next.js ------
+
 
 # Сборка и логи
 # ==========================================
@@ -81,13 +84,13 @@ frontend-react/node_modules/
 # Переменные окружения (Секреты)
 # ==========================================
 # Игнорируем файлы с реальными ключами, но ОСТАВЛЯЕМ .env.example
-frontend-react/environments/.env
-frontend-react/environments/.env.local
-frontend-react/environments/.env.development
-frontend-react/environments/.env.development.local
-frontend-react/environments/.env.test.local
-frontend-react/environments/.env.production
-frontend-react/environments/.env.production.local
+frontend-react/.env
+frontend-react/.env.local
+frontend-react/.env.development
+frontend-react/.env.development.local
+frontend-react/.env.test.local
+frontend-react/.env.production
+frontend-react/.env.production.local
 
 # production
 frontend-react/build
@@ -115,6 +118,19 @@ frontend-react/*.md
 frontend-react/.vercel
 frontend-react/.turbo
 
-# typescript
+# Typescript
 frontend-react/*.tsbuildinfo
 frontend-react/next-env.d.ts
+
+# Jest
+frontend-react/test/reports
+
+# Public images
+frontend-react/public/images_thumbnail
+
+
+
+# ----- Docker ------
+
+docker-compose.dev.yml
+docker-compose.prod.yml

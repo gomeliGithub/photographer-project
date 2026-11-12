@@ -1,4 +1,4 @@
-import type { Client_type } from "../../backend-nest/node_modules/@prisma/client";
+import type { Client_type } from "@prisma/client";
 
 export interface IClientSignData {
     login: string;

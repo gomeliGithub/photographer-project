@@ -79,12 +79,23 @@ export class AppModule {
 
             const dumpFilePath: string = path.join(process.cwd(), 'databaseDumps', `dump_${ lastDumpDate.getTime() }.sql`);
 
-            const membersCount: number = await this._prisma.member.count();
-            const compressedImagesCount: number = await this._prisma.compressedImage.count();
-            const imagePhotographyTypesCount: number = await this._prisma.imagePhotographyType.count();
-            const clientOrdersCount: number = await this._prisma.clientOrder.count();
-            const discountsCount: number = await this._prisma.discount.count();
-            const jWTsCount: number = await this._prisma.jWT.count();
+            let membersCount: number = 0;
+            let compressedImagesCount: number = 0;
+            let imagePhotographyTypesCount: number = 0;
+            let clientOrdersCount: number = 0;
+            let discountsCount: number = 0;
+            let jWTsCount: number = 0;
+
+            try {
+                membersCount = await this._prisma.member.count();
+                compressedImagesCount = await this._prisma.compressedImage.count();
+                imagePhotographyTypesCount = await this._prisma.imagePhotographyType.count();
+                clientOrdersCount = await this._prisma.clientOrder.count();
+                discountsCount = await this._prisma.discount.count();
+                jWTsCount = await this._prisma.jWT.count();
+            } catch ( err ) { 
+                this._appService.logLineAsync(`${ process.env['SERVER_DOMAIN'] } [${ process.env['SERVER_API_PORT'] }] Database import error - One or few tables did't exists. DumpFile dump_${ lastDumpDate.getTime() }.sql`, true, 'server');
+            }
 
             if ( membersCount === 0 && compressedImagesCount === 0 && imagePhotographyTypesCount === 0 && clientOrdersCount === 0 && discountsCount === 0 && jWTsCount === 0 ) {
                 this._appService.logLineAsync(`${ process.env['SERVER_DOMAIN'] } [${ process.env['SERVER_API_PORT'] }] Starting importing data from the dump - ${ dumpFilePath }`, false, 'server');

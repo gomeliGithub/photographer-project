@@ -1,6 +1,6 @@
 import type { Request } from "express";
 
-import type { Client_order_type, Image_display_type, Image_photography_type } from "../../backend-nest/node_modules/@prisma/client";
+import type { Client_order_type, Image_display_type, Image_photography_type } from "@prisma/client";
 
 import type { IClientSignData, IJWTPayload } from "./sign";
 import type { IClientOrderWithoutRelationFields, ICompressedImageWithoutRelationFields } from "./models";

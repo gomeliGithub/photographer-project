@@ -1,5 +1,5 @@
-import type { Client_order_status, Image_display_type, Image_photography_type, Prisma } from "../../backend-nest/node_modules/@prisma/client";
-import type { DefaultArgs } from "../../backend-nest/node_modules/@prisma/client/runtime/library";
+import type { Client_order_status, Image_display_type, Image_photography_type, Prisma } from "@prisma/client";
+import type { DefaultArgs } from "@prisma/client/runtime/library";
 
 import { IJWTPayload } from "./sign";
 

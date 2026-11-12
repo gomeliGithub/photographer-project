@@ -1,4 +1,4 @@
-import type { Prisma, Admin, Member, CompressedImage, ImagePhotographyType, ClientOrder, Discount, JWT } from "../../backend-nest/node_modules/@prisma/client";
+import type { Prisma, Admin, Member, CompressedImage, ImagePhotographyType, ClientOrder, Discount, JWT } from "@prisma/client";
 
 export interface IAdmin extends Admin, Prisma.AdminGetPayload<{ include: { compressedImages: true } }> { }
 export interface IAdminWithCompressedImagesCount extends Admin, Prisma.AdminGetPayload<{ include: { compressedImages: true, _count: { select: { compressedImages: true } } } }> { }
